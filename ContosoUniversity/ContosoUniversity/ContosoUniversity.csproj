@@ -171,8 +171,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804080242510_InitialCreate.cs" />
+    <Compile Include="Migrations\201804080242510_InitialCreate.Designer.cs">
+      <DependentUpon>201804080242510_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804080812208_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201804080812208_MaxLengthOnNames.Designer.cs">
+      <DependentUpon>201804080812208_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804080834122_updateFirstName.cs" />
+    <Compile Include="Migrations\201804080834122_updateFirstName.Designer.cs">
+      <DependentUpon>201804080834122_updateFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\EnrollmentDateGroup.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -233,6 +250,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804080242510_InitialCreate.resx">
+      <DependentUpon>201804080242510_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804080812208_MaxLengthOnNames.resx">
+      <DependentUpon>201804080812208_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804080834122_updateFirstName.resx">
+      <DependentUpon>201804080834122_updateFirstName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
